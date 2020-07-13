@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1014420150872-t84p5jfeg0fq9o179fc5o4k1aphknlqs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1014420150872-t84p5jfeg0fq9o179fc5o4k1aphknlqs</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1014420150872-ipcrvutfmap4redvu09mlghkp4au3tj5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzZQVJNdTL1xW0o3tPcEQ6aaRpF7I6w2k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1014420150872</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tvnetwork.luzo</string>
+	<key>PROJECT_ID</key>
+	<string>luzo-tv-network</string>
+	<key>STORAGE_BUCKET</key>
+	<string>luzo-tv-network.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1014420150872:ios:a68ecb3f4c53843192882d</string>
+	<key>DATABASE_URL</key>
+	<string>https://luzo-tv-network.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-9100182749286638~9774897605</string>
+</dict>
+</plist>

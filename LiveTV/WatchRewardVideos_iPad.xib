@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WatchRewardVideos" customModule="LiveTV" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="r3W-BL-AjH" id="vx3-s1-79K"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hVi-ce-zH2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skip_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ms0-lV-HOV">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-BL-AjH">
+                    <rect key="frame" x="0.0" y="60" width="768" height="964"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XGG-e1-5o7">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oif-0l-ciy">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-uY-smn">
+                            <rect key="frame" x="8" y="22" width="42" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="0Tc-HB-9LS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reward Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU6-GA-vMT">
+                            <rect key="frame" x="312" y="22" width="145" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="XfS-31-XSA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oif-0l-ciy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Lny-tb-xDs"/>
+                <constraint firstItem="ms0-lV-HOV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="O8x-tQ-l49"/>
+                <constraint firstItem="r3W-BL-AjH" firstAttribute="top" secondItem="Oif-0l-ciy" secondAttribute="bottom" id="U8a-81-Gwf"/>
+                <constraint firstItem="ms0-lV-HOV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VuX-1J-NGE"/>
+                <constraint firstItem="Oif-0l-ciy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YLv-Pw-u2j"/>
+                <constraint firstItem="ms0-lV-HOV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dOK-yi-1ux"/>
+                <constraint firstItem="Oif-0l-ciy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ggr-n8-E6G"/>
+                <constraint firstItem="r3W-BL-AjH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pJ5-EG-B6j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="r3W-BL-AjH" secondAttribute="bottom" id="tAa-fR-1k6"/>
+                <constraint firstItem="r3W-BL-AjH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="wWH-NX-Dce"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ms0-lV-HOV" secondAttribute="bottom" id="zW8-sH-poY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="78.515625" y="23.718887262079061"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="skip_bg.jpg" width="320" height="568"/>
+    </resources>
+</document>

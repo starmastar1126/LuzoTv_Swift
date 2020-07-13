@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MobileRegistration" customModule="LiveTV" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPassword" destination="Db6-uy-1WD" id="S6q-Jj-qYM"/>
+                <outlet property="confirmPasswordLabel" destination="s7T-RJ-jpp" id="NBV-Cr-iV9"/>
+                <outlet property="numberLabel" destination="mhC-Mc-TpX" id="he8-bi-4IS"/>
+                <outlet property="numberTextField" destination="x8I-VK-wSB" id="f1a-4p-kLR"/>
+                <outlet property="otpBtn" destination="rVI-qI-jRz" id="CUf-E2-eXb"/>
+                <outlet property="otpCode" destination="vnE-FA-J7P" id="u9w-6b-SNS"/>
+                <outlet property="otpCodeLabel" destination="tww-5m-R9b" id="0cm-2s-hoU"/>
+                <outlet property="password" destination="9LJ-ih-WD8" id="lO9-vo-aXp"/>
+                <outlet property="passwordLabel" destination="QN5-UV-0de" id="YLj-wT-8ng"/>
+                <outlet property="verifyBtn" destination="Dx1-9U-qSJ" id="GCS-JF-v0k"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Iwz-yU-fHW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lYB-wL-FxJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhC-Mc-TpX">
+                    <rect key="frame" x="16" y="195" width="343" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="VoH-OX-QAK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-Xp-R3i">
+                    <rect key="frame" x="23" y="202" width="32" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="012-3456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8I-VK-wSB" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                    <rect key="frame" x="63" y="202" width="284" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yMK-0b-bWO"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tww-5m-R9b">
+                    <rect key="frame" x="16" y="341" width="351" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="xJu-Iu-Uqc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="g1O-J6-SeO">
+                    <rect key="frame" x="23" y="348" width="32" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up With Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH7-s4-CHF">
+                    <rect key="frame" x="16" y="95" width="343" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="bNQ-VW-pWl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1: Choose Country and Enter Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1A-Fz-ac4">
+                    <rect key="frame" x="16" y="145" width="343" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="BTO-El-eAB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Enter OTP Code (Not Yet Completed)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-ll-QY7">
+                    <rect key="frame" x="16" y="291" width="351" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Gy5-j2-bGe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx1-9U-qSJ">
+                    <rect key="frame" x="146" y="248" width="74" height="35"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.32549019610000002" blue="0.72549019609999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Iro-on-Izq"/>
+                        <constraint firstAttribute="width" constant="74" id="uEl-9A-pWt"/>
+                    </constraints>
+                    <state key="normal" title="VERIFY">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="verifyNumber:" destination="-1" eventType="touchUpInside" id="prf-uQ-dZR"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcL-sK-K7q">
+                    <rect key="frame" x="63" y="636" width="249" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Still Can't Register? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUc-WT-eeb">
+                            <rect key="frame" x="0.0" y="0.0" width="148" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-5Q-nj6">
+                            <rect key="frame" x="148" y="0.0" width="101" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Try Another Way">
+                                <color key="titleColor" red="0.85262101889999997" green="0.42218321559999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tryAnotherWay:" destination="-1" eventType="touchUpInside" id="lgG-JU-Yf1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adH-JY-HW1">
+                    <rect key="frame" x="16" y="44" width="52" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="UJK-z3-1TR"/>
+                        <constraint firstAttribute="width" constant="52" id="bej-Cb-L1N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="MF4-4r-Sap"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVI-qI-jRz">
+                    <rect key="frame" x="149" y="572" width="85" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.32549019610000002" blue="0.72549019609999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkOTPCode:" destination="-1" eventType="touchUpInside" id="4ap-aD-c9b"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="012-3456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vnE-FA-J7P">
+                    <rect key="frame" x="63" y="348" width="296" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FvL-kj-MUB"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-UV-0de">
+                    <rect key="frame" x="16" y="394" width="351" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="rjm-MW-Xur">
+                    <rect key="frame" x="23" y="401" width="32" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="012-3456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9LJ-ih-WD8">
+                    <rect key="frame" x="63" y="401" width="296" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="wYI-Y8-caf"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7T-RJ-jpp">
+                    <rect key="frame" x="16" y="447" width="351" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password.png" translatesAutoresizingMaskIntoConstraints="NO" id="AiX-Uf-3uM">
+                    <rect key="frame" x="23" y="454" width="32" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="012-3456789" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Db6-uy-1WD">
+                    <rect key="frame" x="63" y="454" width="296" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xIn-Fw-t2f"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tww-5m-R9b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="0dk-1i-H3q"/>
+                <constraint firstItem="f1A-Fz-ac4" firstAttribute="top" secondItem="TH7-s4-CHF" secondAttribute="bottom" constant="8" id="4DX-dh-Zb1"/>
+                <constraint firstItem="Dx1-9U-qSJ" firstAttribute="top" secondItem="mhC-Mc-TpX" secondAttribute="bottom" constant="8" id="5cs-Uf-wiZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sj0-ll-QY7" secondAttribute="trailing" constant="8" id="6c1-Gu-XJk"/>
+                <constraint firstItem="mhC-Mc-TpX" firstAttribute="top" secondItem="f1A-Fz-ac4" secondAttribute="bottom" constant="8" id="AHm-O6-I0u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TH7-s4-CHF" secondAttribute="trailing" constant="16" id="EQE-fp-4q3"/>
+                <constraint firstItem="f1A-Fz-ac4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="FJv-jP-D2D"/>
+                <constraint firstItem="mhC-Mc-TpX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IyX-OW-9vI"/>
+                <constraint firstItem="adH-JY-HW1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Sv7-s5-hP2"/>
+                <constraint firstItem="TH7-s4-CHF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="YIs-h5-HWd"/>
+                <constraint firstItem="adH-JY-HW1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="YuU-3g-Ezu"/>
+                <constraint firstItem="Sj0-ll-QY7" firstAttribute="top" secondItem="Dx1-9U-qSJ" secondAttribute="bottom" constant="8" id="auF-hg-88C"/>
+                <constraint firstItem="Sj0-ll-QY7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cY1-T8-5bb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tww-5m-R9b" secondAttribute="trailing" constant="8" id="dTj-lJ-PU0"/>
+                <constraint firstItem="tww-5m-R9b" firstAttribute="top" secondItem="Sj0-ll-QY7" secondAttribute="bottom" constant="8" id="hd8-RO-cQT"/>
+                <constraint firstItem="mhC-Mc-TpX" firstAttribute="leading" secondItem="Dx1-9U-qSJ" secondAttribute="trailing" constant="-204" id="m63-OK-TS4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f1A-Fz-ac4" secondAttribute="trailing" constant="16" id="rPB-wf-JFy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mhC-Mc-TpX" secondAttribute="trailing" constant="16" id="tzf-wy-29z"/>
+                <constraint firstItem="TH7-s4-CHF" firstAttribute="top" secondItem="adH-JY-HW1" secondAttribute="bottom" constant="14" id="wPE-Mh-i29"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="71" y="-6"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg.jpg" width="320" height="568"/>
+        <image name="password.png" width="32" height="32"/>
+        <image name="phone.png" width="32" height="32"/>
+    </resources>
+</document>

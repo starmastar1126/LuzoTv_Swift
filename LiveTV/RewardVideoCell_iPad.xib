@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kS0-2e-oOM" customClass="RewardVideoCell" customModule="LiveTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="132" height="215"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1H-vt-IMo">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="215"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hd9-GG-av7">
+                                <rect key="frame" x="0.0" y="0.0" width="132" height="215"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUj-Tf-3a8">
+                                <rect key="frame" x="0.0" y="185" width="132" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nZk-7H-xhY"/>
+                                </constraints>
+                                <state key="normal" title="Visit Advertiser">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hd9-GG-av7" firstAttribute="width" secondItem="q1H-vt-IMo" secondAttribute="width" id="67N-4U-Q5R"/>
+                            <constraint firstItem="Hd9-GG-av7" firstAttribute="centerX" secondItem="q1H-vt-IMo" secondAttribute="centerX" id="H2K-WN-qDF"/>
+                            <constraint firstAttribute="trailing" secondItem="CUj-Tf-3a8" secondAttribute="trailing" id="MaN-zL-tjM"/>
+                            <constraint firstAttribute="bottom" secondItem="CUj-Tf-3a8" secondAttribute="bottom" id="exa-aj-kyq"/>
+                            <constraint firstItem="Hd9-GG-av7" firstAttribute="centerY" secondItem="q1H-vt-IMo" secondAttribute="centerY" id="l2P-zZ-nkO"/>
+                            <constraint firstItem="CUj-Tf-3a8" firstAttribute="leading" secondItem="q1H-vt-IMo" secondAttribute="leading" id="oBF-rL-xE2"/>
+                            <constraint firstItem="Hd9-GG-av7" firstAttribute="height" secondItem="q1H-vt-IMo" secondAttribute="height" id="t0G-3X-v4b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="q1H-vt-IMo" firstAttribute="top" secondItem="kS0-2e-oOM" secondAttribute="top" id="VYu-ig-NwE"/>
+                <constraint firstAttribute="trailing" secondItem="q1H-vt-IMo" secondAttribute="trailing" id="iaX-El-QeY"/>
+                <constraint firstItem="q1H-vt-IMo" firstAttribute="leading" secondItem="kS0-2e-oOM" secondAttribute="leading" id="rHm-0a-paA"/>
+                <constraint firstAttribute="bottom" secondItem="q1H-vt-IMo" secondAttribute="bottom" id="um5-pD-X0x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xre-cg-OF4"/>
+            <size key="customSize" width="132" height="215"/>
+            <point key="canvasLocation" x="311.59420289855075" y="-231.36160714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

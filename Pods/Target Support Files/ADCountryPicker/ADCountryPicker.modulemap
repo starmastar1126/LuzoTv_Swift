@@ -1,0 +1,6 @@
+framework module ADCountryPicker {
+  umbrella header "ADCountryPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
